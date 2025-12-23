@@ -1,0 +1,28 @@
+<!-- frontend/chatbot.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot — AI QuizMaster</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Chatbot</h1>
+    <a href="dashboard.html" class="small-link">← Back</a>
+  </header>
+
+  <main class="container">
+    <div class="card chat-card">
+      <div id="chatWindow" class="chat-window"></div>
+      <form id="chatForm" class="chat-form">
+        <input id="chatInput" placeholder="Ask the AI..." autocomplete="off" />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="js/chatbot.js"></script>
+</body>
+</html>

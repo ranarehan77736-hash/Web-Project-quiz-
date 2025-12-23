@@ -1,0 +1,37 @@
+<!-- frontend/quiz.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quiz — AI QuizMaster</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Quiz</h1>
+    <a href="dashboard.html" class="small-link">← Back</a>
+  </header>
+
+  <main class="container">
+    <div class="card" id="quizCard">
+      <div id="quizMeta">
+        <p>Topic: <span id="topicLabel"></span></p>
+        <p>Time left: <span id="timer">--:--</span></p>
+      </div>
+
+      <div id="questionArea"></div>
+
+      <div id="controls" class="controls">
+        <button id="prevBtn">Previous</button>
+        <button id="nextBtn">Next</button>
+        <button id="submitBtn">Submit Quiz</button>
+      </div>
+
+      <div id="result" class="hidden"></div>
+    </div>
+  </main>
+
+  <script src="js/quiz.js"></script>
+</body>
+</html>

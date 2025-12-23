@@ -1,0 +1,38 @@
+<!-- frontend/dashboard.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dashboard — AI QuizMaster</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>AI QuizMaster — Dashboard</h1>
+    <div><button id="logoutBtn">Logout</button></div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Start a quiz</h2>
+      <label>Topic: <input id="topicInput" placeholder="e.g. javascript" /></label>
+      <label>Questions: <input id="countInput" type="number" min="1" max="20" value="5" /></label>
+      <button id="startQuizBtn">Start Quiz</button>
+    </section>
+
+    <section class="card">
+      <h2>Quick Links</h2>
+      <a class="btn" href="chatbot.html">Open Chatbot</a>
+      <a class="btn" href="admin.html">Admin (optional)</a>
+    </section>
+
+    <section class="card">
+      <h2>Recent Attempts</h2>
+      <div id="history"></div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!-- frontend/admin.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — AI QuizMaster</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Admin</h1>
+    <a href="dashboard.html" class="small-link">← Back</a>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Seed mock quiz</h2>
+      <button id="seedBtn">Seed Example Quiz</button>
+    </div>
+
+    <div class="card">
+      <h2>Local Storage</h2>
+      <pre id="lsDump"></pre>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('seedBtn').addEventListener('click', () => {
+      const mock = [{
+        id: "m1",
+        topic: "javascript",
+        questions: [
+          { q: "What is let?", options: ["a","b","c","d"], answer: 0 }
+        ]
+      }];
+      localStorage.setItem('mockQuiz', JSON.stringify(mock));
+      alert('Seeded');
+      location.reload();
+    });
+
+    document.getElementById('lsDump').textContent = JSON.stringify(localStorage, null, 2);
+  </script>
+</body>
+</html>
