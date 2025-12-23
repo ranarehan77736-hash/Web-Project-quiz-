@@ -3,23 +3,40 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Chatbot — AI QuizMaster</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Chatbot — QuizMaster</title>
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="css/chatbot.css" />
 </head>
 <body>
+
   <header class="header">
-    <h1>Chatbot</h1>
-    <a href="dashboard.html" class="small-link">← Back</a>
+    <h1>🤖 AI QuizMaster Chatbot</h1>
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
   </header>
 
-  <main class="container">
-    <div class="card chat-card">
-      <div id="chatWindow" class="chat-window"></div>
+  <main class="chat-container">
+    <div class="chat-card">
+
+      <div id="chatWindow" class="chat-window">
+        <div class="message bot">
+          <span>AI</span>
+          Hello 👋 Ask me anything about quizzes, programming, or studies!
+        </div>
+      </div>
+
       <form id="chatForm" class="chat-form">
-        <input id="chatInput" placeholder="Ask the AI..." autocomplete="off" />
+        <input
+          id="chatInput"
+          type="text"
+          placeholder="Type your message..."
+          autocomplete="off"
+          required
+        />
         <button type="submit">Send</button>
       </form>
+
     </div>
   </main>
 
